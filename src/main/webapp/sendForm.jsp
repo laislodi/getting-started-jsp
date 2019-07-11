@@ -69,7 +69,7 @@ a {
 </head>
 <body>
 
-	<form action="receiveData.jsp" method="GET">
+	<form action="receiveData.jsp" method="POST">
 		<div class="container">
 	    <h1>Register</h1>
 	    <p>Please fill in this form to create an account.</p>
@@ -79,10 +79,12 @@ a {
 	    <input type="text" placeholder="Enter Name" name="name" required>
 
 	    <label for="document"><b>Document</b></label>
-	    <input type="text" placeholder="Enter document" name="document" required>
+	    <input type="text" placeholder="000.000.000-00" name="document" pattern="^[0-9][0-9][0-9]\.[0-9][0-9][0-9]\.[0-9][0-9][0-9]-[0-9][0-9]" required>
 
 	    <label for="age"><b>Age</b></label>
 	    <input type="text" placeholder="Enter Age" name="age" pattern="^[2-6][0-9]" required>
+
+	    
 	    <hr>
 	    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 

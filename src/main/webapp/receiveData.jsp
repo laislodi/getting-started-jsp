@@ -34,5 +34,7 @@
    </body>
    </table>
 
+   <p>The information came via <%=request.getMethod()%>.</p>
+
 </body>
 </html>
